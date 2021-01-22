@@ -1,0 +1,22 @@
+@mixin menu-link {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $cabinet;
+    bottom: -2px;
+    transform: scale(0);
+    transition: all .5s;
+  }
+  &:hover {
+    &::before {
+      transform: scale(1);
+    }
+  }
+}
+
+
+
+
+
