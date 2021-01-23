@@ -3,4 +3,118 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  &-services {
+    display: flex;
+    justify-content: space-between;
+    color: $icon-menu;
+    &-title {
+      font-size: 30px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+    &-btn {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 50px;
+      border-radius: 5px;
+      background-color: rgb(46, 48, 48);
+      // opacity: 0.8;
+      box-shadow: 0 0 19px -1px $icon-menu;
+      width: 171px;
+      height: 35px;
+      line-height: 35px;
+      background-repeat: no-repeat;
+      background-position: 10px center;
+    }
+  }
+  &-content {
+    max-width: 740px;
+    width: 100%;
+  }
+  &-title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+  &-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 33px;
+    margin-bottom: 85px;
+    max-width: 710px;
+    width: 100%;
+  }
+  &-info {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    &-box {
+      border-radius: 5px;
+      background-color: rgb(46, 43, 43);
+      box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.07);
+      width: 237px;
+      height: 93px;
+      position: relative;
+    }
+    &-registr-text {
+      position: absolute;
+      max-width: 175px;
+      width: 100%;
+      letter-spacing: 1px;
+      padding-left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      &::after{
+        content: "\f178";
+        font-family: 'icomoon';
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        color: $icon-menu;
+      }
+    }
+    &-add-text {
+      position: absolute;
+      max-width: 150px;
+      width: 100%;
+      letter-spacing: 1px;
+      padding-left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      &::after{
+        content: "\f178";
+        font-family: 'icomoon';
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        color: $icon-menu;
+      }
+    }
+    &-cabinet-text {
+      position: absolute;
+      padding-left: 10px;
+      letter-spacing: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      &::after{
+        content: "\f178";
+        font-family: 'icomoon';
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        color: $icon-menu;
+      }
+     
+    }
+  }
 }
+
+
+
+
+
+
