@@ -18,6 +18,11 @@
             <div class="header__top-logo">
               <img src="images/logo.png" alt="">
             </div>
+            <div class="menu__btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
             <ul class="nav">
               <li class="nav__link"><a href="#">Собственникам</a></li>
               <li class="nav__link"><a href="#">Услуги</a></li>
@@ -39,6 +44,11 @@
     <div class="header__bottom">
       <div class="container">
         <div class="header__bottom-wrap">
+          <div class="bottom__menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <ul class="header__bottom-menu">
             <li class="header__bottom-item"><a href="#">Продажа</a></li>
             <li class="header__bottom-item"><a href="#">Аренда</a></li>
@@ -80,65 +90,173 @@
     </div>
   </header>
   <main>
-    <section class="header__slider" style="background-image: url(images/bg-header.jpg);">
-      <div class="container">
-        <div class="header__slider-item">
-          <div class="header__slider-services">
-            <div class="header__slider-services-title">
-              Сервис Аукцион
-            </div>
-            <div class="header__slider-services-btn" style="background-image: url(images/add-object.png);">
-              Добавить объект
-            </div>
-          </div>
-
-          <div class="header__slider-content">
-            <div class="header__slider-title">
-              Когда главный ресурс - это время
-            </div>
-            <div class="header__slider-text">
-              Предложения поступают постоянно и видны только вам. Вы сами решаете, когда 
-              остановить «торги» и заключить сделку.
-            </div>
-            <div class="header__slider-info">
-              <div class="header__slider-info-box header__slider-info-registr">
-                <a href="#">
-                  <div class="header__slider-info-registr-text">
-                    Пройдите простую
-                    регистрацию
-                  </div>
-                </a>
+    <section class="header__slider">
+      <div class="header__slider1" style="background-image: url(images/bg-header.jpg);">
+        <div class="container">
+          <div class="header__slider1-item">
+            <div class="header__slider1-services">
+              <div class="header__slider1-services-title">
+                Сервис Аукцион
               </div>
-              <div class="header__slider-info-box header__slider-info-add">
-                <a href="#"></a>
-                  <div class="header__slider-info-add-text">
-                    Добавьте объект
-                    в работу
-                  </div>
-                </a>
+              <div class="header__slider1-services-btn" style="background-image: url(images/add-object.png);">
+                Добавить объект
               </div>
-              <div class="header__slider-info-box header__slider-info-cabinet">
-                <a href="#">
-                  <div class="header__slider-info-cabinet-text">
-                    Следите за предложениями 
-                    в Личном кабинете
-                  </div>
-                </a>
+            </div>
+  
+            <div class="header__slider1-content">
+              <div class="header__slider1-title">
+                Когда главный ресурс - это время
               </div>
-          </div>
-
+              <div class="header__slider1-text">
+                Предложения поступают постоянно и видны только вам. Вы сами решаете, когда 
+                остановить «торги» и заключить сделку.
+              </div>
+              <div class="header__slider1-info">
+                <div class="header__slider1-info-box header__slider-info-registr">
+                  <a href="#">
+                    <div class="header__slider1-info-registr-text">
+                      Пройдите простую
+                      регистрацию
+                    </div>
+                  </a>
+                </div>
+                <div class="header__slider1-info-box header__slider-info-add">
+                  <a href="#"></a>
+                    <div class="header__slider1-info-add-text">
+                      Добавьте объект
+                      в работу
+                    </div>
+                  </a>
+                </div>
+                <div class="header__slider1-info-box header__slider-info-cabinet">
+                  <a href="#">
+                    <div class="header__slider1-info-cabinet-text">
+                      Следите за предложениями 
+                      в Личном кабинете
+                    </div>
+                  </a>
+                </div>
+            </div>
+  
+            </div>
           </div>
         </div>
-        <div class="header__slider-item"></div>
+      </div>
+
+      <div class="header__slider2" style="background-image: url(images/bg-header2.jpg);">
+        <div class="container">
+          <div class="header__slider2-item">
+            <div class="header__slider2-wrap">
+              <div class="header__slider2-title">
+                iRealty проверяет каждый объект
+              </div>
+              <div class="header__slider2-btn" style="background-image: url(images/add-object2.png);">
+                Добавить объект
+              </div>
+            </div>
+            <div class="header__slider2-text">
+              Ищите объекты и изучайте сведения из ЕГРН в одном месте. Это удобно и надежно
+            </div>
+            <div class="header__slider2-breadcrumbs">
+              <div class="header__slider2-breadcrumbs-item active">Продажа / </div>
+              <div class="header__slider2-breadcrumbs-item">Аренда  / </div>
+              <div class="header__slider2-breadcrumbs-item">Посуточно</div>
+            </div>
+  
+            <div class="header__slider2-content">
+              <div class="header__slider2-form">
+                <form>
+                  <input class="header__slider2-form-input" type="text">
+                    <input class="form__box-content form__box-object" placeholder="Тип объекта" type="text">
+                    <input class="form__box-content form__box-apartment" placeholder="Комнат" type="text">
+                    <input class="form__box-content form__box-meters" placeholder="Метраж" type="text">
+                    <input class="form__box-content form__box-price" placeholder="Цена" type="text">
+                    <input class="form__box-content form__box-address" 
+                    placeholder="Город, ЖК,БЦ,ТЦ адрес, метро, район, ж/д, шоссе" 
+                    type="text"
+                    >
+                 
+                  <button type="submit">Найти</button>
+                </form>
+              </div>
+              <div class="header__slider2-box">
+                  <div class="header__slider2-box-left">
+                    <div class="header__slider2-box-slider">
+                      <div class="header__slider2-box-title">
+                        ЖК «Москва Сити»
+                      </div>
+                      <div class="header__slider2-box-apartment">
+                        <div class="header__slider2-box-apartment-name">
+                          1-комнатные
+                          <span>- 35 933</span>
+                        </div>
+                        <div class="header__slider2-box-apartment-name">
+                          2-комнатные
+                          <span>- 24 354</span>
+                        </div>
+                        <div class="header__slider2-box-apartment-name">
+                          3-комнатные 
+                          <span>- 12 234</span>
+                        </div>
+                      </div>
+                      <div class="header__slider2-box-realty ">
+                        <div class="header__slider2-box-realty-name">
+                          машиноместа
+                          <span>- 7 252</span>
+                        </div>
+                        <div class="header__slider2-box-realty-name">
+                          ком. недвижимость
+                          <span>- 34 238</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="header__slider2-box-right">
+                  <div class="header__slider2-box-right-wrap">
+                    <div class="header__slider2-box-right-btnsearch"
+                     style="background-image: url(images/icon-menu.png);">
+                      <a href="#">Поиск на карте</a>
+                    </div>
+                    <div class="header__slider2-box-right-btnrequest">
+                      <a href="#">Создать свой запрос</a>
+                    </div>
+                  </div>
+                  <p>
+                    Воспользуйтесь умным поиском iRealty и найдите <br>
+                    объект подходящий именно вам
+                  </p>
+                </div>
+                </div>
+              
+            </div>
+  
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__text">
+
+      </div>
+    </div>
+  </footer>
   
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
 
 
 
