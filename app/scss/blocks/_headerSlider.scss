@@ -112,6 +112,27 @@
     }
   }
 }
+
+// ==========CSS of slider=========================
+
+.header__slider.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.header__slider .slick-dots {
+  transform: rotate(90deg);
+  bottom: 292px;
+  left: 635px;
+}
+.header__slider .slick-dots li.slick-active button:before {
+  color: #fff;
+  font-size: 46px;
+}
+.header__slider .slick-dots li button:before {
+  font-size: 28px;
+  color: #fff;
+  opacity: 1;
+}
+
 // =============Slider2==================
 
 .header__slider2{
@@ -223,8 +244,7 @@
     left: 418px;
   }
   &-address {
-    max-width: 565px;
-    width: 100%;
+    width: 565px;
     left: 551px;
   }
  
@@ -234,9 +254,11 @@
 .header__slider2-box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   &-left {
     margin-top: 50px;
     color: #fff;
+    width: 50%;
   }
   &-title {
     font-size: 16px;
@@ -318,4 +340,119 @@
 }
 
 
+.slider2__wrap-left {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 185px;
+  top: 2px;
+  z-index: 3;
+}
+.slider2__wrap-right {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 210px;
+  top: 2px;
+  z-index: 3;
+}
+
+
+@media (max-width: 1300px) {
+  .header__slider .slick-dots {
+    left: 580px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__slider .slick-dots {
+    left: 520px;
+  }
+}
+
+@media (max-width: 1163px) {
+  .form__box-address {
+   width: 480px;
+   left: 449px;
+  }
+  .form__box-price {
+    left: 356px;
+  }
+  .form__box-apartment {
+    left: 141px;
+  }
+  .form__box-meters {
+    left: 250px;
+  }
+
+}
+@media (max-width: 1060px) {
+  .header__slider .slick-dots {
+    left: 470px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__slider2-title {
+    font-size: 32px;
+  }
+  .header__slider2-box-right p {
+    text-align: left;
+  }
+}
+@media (max-width: 984px) {
+  .header__slider .slick-dots {
+    left: 450px;
+  }
+}
+
+@media (max-width: 976px) {
+  .form__box-content {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .header__slider2-form button{
+    top: 245px;
+    width: 100%;
+  }
+  .header__slider2-title {
+    font-size: 32px;
+  }
+  
+  
+}
+
+@media (max-width: 785px) {
+  .header__slider1-title {
+    font-size: 32px;
+  }
+  .header__slider1-info {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 785px) {
+  .header__slider1-info {
+    flex-direction: column;
+  }
+  .header__slider2-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__slider1-title {
+    font-size: 30px;
+  }
+}
 
