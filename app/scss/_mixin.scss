@@ -17,7 +17,14 @@
   }
 }
 
-
+@mixin radius {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ECF8FF, #ECF8FF);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
 
 
 

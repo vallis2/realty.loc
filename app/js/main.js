@@ -97,4 +97,9 @@ $(function(){
   });
 
 
+ 
+
+  var mixer = mixitup('.realty-info__wrapper-box');
+
+
 });
