@@ -1,5 +1,5 @@
 .realty-info {
-  padding: 65px 0;
+  padding: 65px 0 20px;
   background-color: #f6f8fb;
   &__wrap {
     display: flex;
@@ -155,7 +155,8 @@
 
 .btn__info {
   display: inline-block;
-  width: 306px;
+  max-width: 306px;
+  width: 100%;
   height: 35px;
   border-radius: 5px;
   color: #fff;
@@ -197,6 +198,7 @@
   &-operation {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &-list {
     font-weight: 300;
@@ -216,7 +218,8 @@
 
 .realty-info__btn-info {
   display: inline-block;
-  width: 306px;
+  max-width: 306px;
+  width: 100%;
   height: 35px;
   border-radius: 5px;
   color: #fff;
@@ -231,7 +234,8 @@
 }
 .realty-info__btn-bid {
   display: inline-block;
-  width: 316px;
+  max-width: 306px;
+  width: 100%;
   height: 35px;
   background-image: linear-gradient( 45deg, rgb(51,160,216) 0%, rgb(74,190,247) 100%);
   border-radius: 5px;
@@ -257,12 +261,43 @@
   font-weight: 300;
   margin-top: 20px;
   text-align: center;
-  line-height: 35px;
+  line-height: 32px;
   &+.realty-info__box-btn-online {
     margin-left: 45px;
   }
 }
 
-// ==========BOX RIGHT==============
+// ==========Медиа==============
 
-
+@media (max-width: 785px) {
+  .realty-info__btn-info {
+    display: block;
+    margin-bottom: 20px;
+    & + .realty-info__btn-bid {
+      margin-left: 0;
+    }
+  }
+  .realty-info__btn-bid {
+    display: block;
+  }
+}
+@media (max-width: 760px) {
+  .realty-info__wrapper-btn {
+    overflow-x: scroll;
+  }
+  .realty-info__wrapper-box {
+    overflow-x: scroll;
+  }
+  .btn__info {
+    margin-bottom: 10px;
+    & + .btn__bid {
+      margin-left: 0;
+    }
+  }
+ 
+}
+@media (max-width: 525px) {
+  .realty-info__box-btn-online + .realty-info__box-btn-online {
+    margin-left: 0;
+  }
+}
