@@ -1,4 +1,243 @@
 .footer {
-  background: $icon-menu;
-  height: 50px;
+  position: relative;
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+    color: $icon-menu;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__search {
+    color: #4ebff7;
+    display: inline-block;
+    margin-right: 17px;
+   
+  }
+  &__star {
+    color: #4ebff7;
+    display: inline-block;
+    margin-right: -5px;
+    color: #1d1c1c;
+    font-weight: 700;
+  }
+  &__shtrih {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -8px;
+      background-color: #abb7c5;
+      width: 1px;
+      height: 16px;
+    }
+  }
+  &__bottom2 {
+    background: $icon-menu;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__text {
+    color: #FFF;
+  }
+  &__logo {
+    padding-left: 10px;
+  }
+}
+
+.footer-realty {
+  &__block {
+    margin-bottom: 45px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;;
+    margin-top: 15px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    max-width: 180px;
+    // width: 100%;
+  }
+  &__list {
+    font-weight: 300;
+    line-height: 45px;
+  }
+  &__show-all,
+  &__show-all2,
+  &__show-all3,
+  &__show-all4 {
+    font-weight: 300;
+    color: $cabinet;
+    text-decoration: underline;
+    text-align: left;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "\f107";
+      font-family: 'icomoon';
+      position: absolute;
+      top: 0;
+      left: 100px;
+      color: #000;
+      
+    }
+  }
+   &__hide,
+   &__hide2,
+   &__hide3,
+   &__hide4 {
+    font-weight: 300;
+    color: $cabinet;
+    text-decoration: underline;
+    text-align: left;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "\f106";
+      font-family: 'icomoon';
+      position: absolute;
+      top: 0;
+      left: 60px;
+      color: #000;
+      
+    }
+  }
+}
+
+.footer-realty__item-all,
+.footer-realty__item-all2,
+.footer-realty__item-all3,
+.footer-realty__item-all4,
+.footer-realty__hide,
+.footer-realty__hide2,
+.footer-realty__hide3,
+.footer-realty__hide4 {
+  display: none;
+  &--active {
+    display: block;
+  }
+}
+
+.footer-realty__show-all--active,
+.footer-realty__show-all2--active,
+.footer-realty__show-all3--active,
+.footer-realty__show-all4--active {
+  display: none;
+}
+
+.footer__menu-btn {
+  display: none;
+}
+
+.footer__bottom {
+  background: $text;
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.07);
+  height: 70px;
+  &-wrap {
+    color: #fff;
+    line-height: 70px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+  &-item {
+    display: inline-block;
+    position: relative;
+    @include menu-link;
+    &+.footer__bottom-item {
+      margin-left: 30px;
+    }
+    &-img {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  &-info {
+    color: $cabinet;
+    display: inline-block;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+@media (max-width: 1075px) {
+  ul.footer__bottom-menu {
+    margin-top: -37px;
+  }
+}
+
+@media (max-width: 780px) {
+  .footer__bottom-menu {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    top: 178px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 50%;
+    padding: 0 20px;
+    // padding-bottom: 30px;
+    a {
+      display: block;
+      border-bottom: 1px solid #fff;
+    }
+    li {
+      display: block;
+      &+.footer__bottom-item {
+        margin-left: 0;
+      }
+      &:first-child {
+        border-top: 1px solid #fff;
+      }
+    }
+  }
+  .footer__menu-btn {
+    display: block;
+    width: 30px;
+    div {
+      background-color: #fff;
+      height: 3px;
+      + div {
+        margin-top: 4px;
+      }
+    }
+  }
+  .footer__bottom-wrap {
+    flex-direction: row-reverse;
+  }
+
+}
+
+@media (max-width: 452px) {
+  .footer__bottom-menu {
+    top: 203px;
+  }
+}
+
+
+
+
+
+@media (min-width: 780px){
+  .footer__bottom-menu {
+      display: block !important;
+  }
+
 }

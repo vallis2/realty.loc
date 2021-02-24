@@ -97,6 +97,48 @@ $(function(){
   });
 
 
+
+  $('.footer-realty__show-all, .footer-realty__hide').on('click', function(e){
+    e.stopPropagation();
+  
+    $('.footer-realty__item-all').slideToggle('200');
+    $('.footer-realty__hide').toggleClass('footer-realty__hide--active');
+    $('.footer-realty__show-all').toggleClass('footer-realty__show-all--active');
+      
+  });
+  $('.footer-realty__show-all2, .footer-realty__hide2').on('click', function(e){
+    e.stopPropagation();
+  
+    $('.footer-realty__item-all2').slideToggle('200');
+    $('.footer-realty__hide2').toggleClass('footer-realty__hide2--active');
+    $('.footer-realty__show-all2').toggleClass('footer-realty__show-all2--active');
+      
+  });
+  $('.footer-realty__show-all3, .footer-realty__hide3').on('click', function(e){
+    e.stopPropagation();
+  
+    $('.footer-realty__item-all3').slideToggle('200');
+    $('.footer-realty__hide3').toggleClass('footer-realty__hide3--active');
+    $('.footer-realty__show-all3').toggleClass('footer-realty__show-all3--active');
+      
+  });
+  $('.footer-realty__show-all4, .footer-realty__hide4').on('click', function(e){
+    e.stopPropagation();
+  
+    $('.footer-realty__item-all4').slideToggle('200');
+    $('.footer-realty__hide4').toggleClass('footer-realty__hide4--active');
+    $('.footer-realty__show-all4').toggleClass('footer-realty__show-all4--active');
+      
+  });
+
+
+  $('.footer__menu-btn').on('click', function(){
+    $('.footer__bottom-menu').slideToggle();
+  });
+ 
+
+ 
+
  
 
   var mixer = mixitup('.realty-info__wrapper-box');

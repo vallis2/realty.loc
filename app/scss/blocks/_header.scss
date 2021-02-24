@@ -38,10 +38,12 @@
     flex-wrap: wrap;
   }
   &__info-link {
-    // display: inline-block;
     margin-left: 45px;
     color: $text-iconmenu;
     position: relative;
+    &:hover {
+      color: $text;
+    }
     &::before {
       position: absolute;
       font-family: 'icomoon';
@@ -71,9 +73,7 @@
       &::before {
         content: "\f003";
       }
-      &:hover {
-        color: $text;
-      }
+      
     }
     &_tel {
       &::before {
@@ -156,6 +156,7 @@
 .bottom__menu-btn {
   display: none;
 }
+
 
 @media (max-width: 1211px) {
   .header__top-nav{
